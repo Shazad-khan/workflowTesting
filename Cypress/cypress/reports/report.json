@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-12T16:33:26.234Z",
+    "end": "2022-10-12T16:33:54.144Z",
+    "duration": 27910,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f4e9263c-8819-46f6-af12-f84cc02fbf23",
+      "title": "",
+      "fullFile": "cypress/integration/TMS/Requirements.cy.ts",
+      "file": "cypress/integration/TMS/Requirements.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3307e254-4754-4eae-a859-24c08e4f2752",
+          "title": "Search Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "184383d3-0130-42c9-b5cb-609b3516a757",
+              "title": "TMS Requierments Page",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Select an opportunity",
+                  "fullTitle": "Search Test TMS Requierments Page Select an opportunity",
+                  "timedOut": null,
+                  "duration": 10018,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "dependencies.visitTMS();\nrobotEyes.valaditingTitle();\nrobotHands.requirments();\nrobotEyes.requirments();\nrobotHands.searchingOpportunity();\nrobotEyes.searchingOpportunity();\nrobotHands.sortByRequierments();\nrobotEyes.sortByRequierments();\nrobotHands.sortByResources();\nrobotEyes.sortByResources();\nrobotHands.sortByRequistionDate();\nrobotEyes.sortByRequistionDate();\nrobotHands.sortByBlockBy();\nrobotEyes.sortByBlockBy();\nrobotHands.sortByProjectStartDate();\nrobotEyes.sortByProjectStartDate();\nrobotHands.sortByBlockPercent();\nrobotEyes.sortByBlockPercent();\nrobotHands.newOpportunities();\nrobotEyes.newOpportunities();\nrobotHands.pendingOpportunities();\nrobotEyes.pendingOpportunities();\nrobotHands.overdueOpportunities();\nrobotEyes.overdueOpportunities();\nrobotHands.completedOpportunities();\nrobotEyes.completedOpportunities();\nrobotHands.allOpportunities();\nrobotEyes.allOpportunities();\nrobotHands.noOfRequierments();\nrobotEyes.noOfRequierments();\nrobotHands.pagination();\nrobotEyes.pagination();",
+                  "err": {},
+                  "uuid": "f754dd74-53bd-440a-85d5-28ae8b17fde0",
+                  "parentUUID": "184383d3-0130-42c9-b5cb-609b3516a757",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Details of Opportunity",
+                  "fullTitle": "Search Test TMS Requierments Page Details of Opportunity",
+                  "timedOut": null,
+                  "duration": 8639,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "dependencies.visitTMS();\nrobotHands.selectingOpportunity();\nrobotEyes.selectingOpportunity();\nrobotEyes.listOfRequierements();\nrobotHands.listOfRequierements();\nrobotHands.goBack();\nrobotHands.ellipsIcon();\nrobotEyes.ellipsIcon();\nrobotHands.requestResource();\nrobotEyes.requestResource();\nrobotHands.details();\nrobotEyes.details();\nrobotHands.download();\nrobotEyes.download();\nrobotHands.exit();\nrobotHands.hold();\nrobotHands.firstRowEllipsMenu();\nrobotHands.edit();\nrobotEyes.edit();\nrobotHands.activity();\nrobotEyes.activity();\nrobotHands.delet();\nrobotEyes.delet();\nrobotHands.exit();\nrobotHands.secondRowEllipsMenu();\nrobotHands.edit();\nrobotEyes.edit();\nrobotHands.activity();\nrobotEyes.activity();\nrobotHands.delet();\nrobotEyes.delet();\nrobotHands.exit();\nrobotHands.thirdRowEllipsMenu();\nrobotHands.edit();\nrobotEyes.edit();\nrobotHands.activity();\nrobotEyes.activity();\nrobotHands.delet();\nrobotEyes.delet();\nrobotHands.exit();",
+                  "err": {},
+                  "uuid": "c398faf5-88a1-48a5-b625-0ea8484c31ac",
+                  "parentUUID": "184383d3-0130-42c9-b5cb-609b3516a757",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Summary of allocated resources",
+                  "fullTitle": "Search Test TMS Requierments Page Summary of allocated resources",
+                  "timedOut": null,
+                  "duration": 6532,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "dependencies.visitTMS();\nrobotEyes.valaditingTitle();\nrobotHands.selectingOpportunity();\nrobotEyes.selectingOpportunity();\nrobotEyes.listOfRequierements();\nrobotHands.listOfRequierements();\nrobotEyes.blockedState();\nrobotEyes.emptyState();\nrobotEyes.accordion();\nrobotHands.accordion();\nrobotEyes.role();\nrobotEyes.skillMatch();\nrobotHands.selectResource();\nrobotHands.blockResource();\nrobotHands.goBack();\nrobotHands.requestHire();",
+                  "err": {},
+                  "uuid": "45f18524-6b96-48ae-94aa-5201d92c311c",
+                  "parentUUID": "184383d3-0130-42c9-b5cb-609b3516a757",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f754dd74-53bd-440a-85d5-28ae8b17fde0",
+                "c398faf5-88a1-48a5-b625-0ea8484c31ac",
+                "45f18524-6b96-48ae-94aa-5201d92c311c"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 25189,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

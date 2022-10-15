@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("48df4ebc-6b46-4c48-a49a-f1c1cfd28d8b",{name:"shazadk"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>TMS.Feature.opportunitiesList</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-10-14 10:47:25 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>View all the list of opportunities</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:25]"><span>[2:25]</span> <span>View all the details of the opportunity</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">TMS/Feature/opportunitiesList.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">The user should be able to view the list of opportunities, so that i can select an opportunity</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">View all the list of opportunities</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>9532</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://tms-api.tms.imerit-playground.io/api/v1/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:47:16.256 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;requirements&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4150</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">22:47:16.843 request:
+1 &gt; GET https://tms-api.tms.imerit-playground.io/api/v1/requirements
+1 &gt; Host: tms-api.tms.imerit-playground.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:47:20.500 response time in milliseconds: 3655
+1 &lt; 200
+1 &lt; Date: Fri, 14 Oct 2022 17:17:19 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 5582
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;15ce-0/kUD+dLZq+UtwrF79hWjg/Gyb8&quot;
+[{&quot;opportunityId&quot;:&quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,&quot;name&quot;:&quot;Kitware&quot;,&quot;startDate&quot;:&quot;2022-10-22T01:44:25.189Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;CV&quot;,&quot;resourcesRequired&quot;:100,&quot;skills&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;BBox - Annotation Level 1&quot;},{&quot;id&quot;:&quot;16&quot;,&quot;name&quot;:&quot;Audio - Annotation Level 1&quot;},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Aerial Image understanding&quot;}],&quot;allocationPercent&quot;:20,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Ajay&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;f098da2f-b921-436b-a00b-99faff5ac3dc&quot;,&quot;upatedBy&quot;:&quot;3a7fd6d3-2ff0-4fc9-adb9-f0cc3ac6b5df&quot;,&quot;createdAt&quot;:&quot;2026-12-16T20:00:17.572Z&quot;,&quot;updatedAt&quot;:&quot;2047-02-04T19:54:12.858Z&quot;,&quot;id&quot;:&quot;1&quot;},{&quot;opportunityId&quot;:&quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,&quot;name&quot;:&quot;Kitware&quot;,&quot;startDate&quot;:&quot;2022-10-22T01:44:25.189Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;NLP&quot;,&quot;resourcesRequired&quot;:95,&quot;skills&quot;:[{&quot;id&quot;:&quot;9&quot;,&quot;name&quot;:&quot;Span Annotation&quot;},{&quot;id&quot;:&quot;18&quot;,&quot;name&quot;:&quot;Text Categorization &quot;},{&quot;id&quot;:&quot;11&quot;,&quot;name&quot;:&quot;Basics of NLP&quot;}],&quot;allocationPercent&quot;:30,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Ajay&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;e3f6ac2e-40ae-46c9-a178-11c650e3a4e5&quot;,&quot;upatedBy&quot;:&quot;60d283ca-90be-48ab-8936-473d2f3a43ef&quot;,&quot;createdAt&quot;:&quot;2012-09-21T17:45:04.620Z&quot;,&quot;updatedAt&quot;:&quot;1995-12-05T15:39:02.525Z&quot;,&quot;id&quot;:&quot;2&quot;},{&quot;opportunityId&quot;:&quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,&quot;name&quot;:&quot;Kitware&quot;,&quot;startDate&quot;:&quot;2022-10-22T01:44:25.189Z&quot;,&quot;role&quot;:&quot;Finance&quot;,&quot;segment&quot;:&quot;Finance&quot;,&quot;resourcesRequired&quot;:4,&quot;skills&quot;:[{&quot;id&quot;:&quot;19&quot;,&quot;name&quot;:&quot;IFRS/GAAP/Accounting &quot;}],&quot;allocationPercent&quot;:100,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Ravi&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;e3f6ac2e-40ae-46c9-a178-11c650e3a4e5&quot;,&quot;upatedBy&quot;:&quot;60d283ca-90be-48ab-8936-473d2f3a43ef&quot;,&quot;createdAt&quot;:&quot;2012-09-21T17:45:04.620Z&quot;,&quot;updatedAt&quot;:&quot;1995-12-05T15:39:02.525Z&quot;,&quot;id&quot;:&quot;3&quot;},{&quot;opportunityId&quot;:&quot;e211e011-5694-46ec-9d41-a455774f79ea&quot;,&quot;name&quot;:&quot;Senetra&quot;,&quot;startDate&quot;:&quot;2022-11-02T20:11:52.434Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;CV&quot;,&quot;resourcesRequired&quot;:34,&quot;skills&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;BBox - Annotation Level 1&quot;},{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;Audio - Annotation Level 2&quot;},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Aerial Image understanding&quot;}],&quot;allocationPercent&quot;:77,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Riya&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;f8ae9a00-563c-4c15-964d-7482003c7069&quot;,&quot;upatedBy&quot;:&quot;39092d56-8b24-4db6-9e22-c07b976848dd&quot;,&quot;createdAt&quot;:&quot;2021-04-08T11:28:05.660Z&quot;,&quot;updatedAt&quot;:&quot;2027-04-19T15:56:13.406Z&quot;,&quot;id&quot;:&quot;4&quot;},{&quot;opportunityId&quot;:&quot;e211e011-5694-46ec-9d41-a455774f79ea&quot;,&quot;name&quot;:&quot;Senetra&quot;,&quot;startDate&quot;:&quot;2038-09-19T15:29:11.219Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;NLP&quot;,&quot;resourcesRequired&quot;:92,&quot;skills&quot;:[{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Span Annotation&quot;},{&quot;id&quot;:&quot;10&quot;,&quot;name&quot;:&quot;Text Categorization &quot;},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Aerial Image understanding&quot;}],&quot;allocationPercent&quot;:81,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Riya&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;a871247b-dc9e-43a7-9251-513a9bd61bb5&quot;,&quot;upatedBy&quot;:&quot;bee68576-1498-4aa0-a77c-bfa018d300e3&quot;,&quot;createdAt&quot;:&quot;2010-01-01T02:38:18.230Z&quot;,&quot;updatedAt&quot;:&quot;2083-05-29T11:14:50.243Z&quot;,&quot;id&quot;:&quot;5&quot;},{&quot;opportunityId&quot;:&quot;57aa38e0-a79e-4212-ab79-b9ce10fc9a3d&quot;,&quot;name&quot;:&quot;Kinatrex&quot;,&quot;startDate&quot;:&quot;2038-09-19T15:29:11.219Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;NLP&quot;,&quot;resourcesRequired&quot;:92,&quot;skills&quot;:[{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Span Annotation&quot;},{&quot;id&quot;:&quot;10&quot;,&quot;name&quot;:&quot;Text Categorization &quot;},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Aerial Image understanding&quot;}],&quot;allocationPercent&quot;:81,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Anurag&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;a871247b-dc9e-43a7-9251-513a9bd61bb5&quot;,&quot;upatedBy&quot;:&quot;bee68576-1498-4aa0-a77c-bfa018d300e3&quot;,&quot;createdAt&quot;:&quot;2010-01-01T02:38:18.230Z&quot;,&quot;updatedAt&quot;:&quot;2083-05-29T11:14:50.243Z&quot;,&quot;id&quot;:&quot;6&quot;},{&quot;opportunityId&quot;:&quot;57aa38e0-a79e-4212-ab79-b9ce10fc9a3d&quot;,&quot;name&quot;:&quot;Kinatrex&quot;,&quot;startDate&quot;:&quot;2038-09-19T15:29:11.219Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;CV&quot;,&quot;resourcesRequired&quot;:92,&quot;skills&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;BBox - Annotation Level 1&quot;},{&quot;id&quot;:&quot;11&quot;,&quot;name&quot;:&quot;Client Tools&quot;},{&quot;id&quot;:&quot;12&quot;,&quot;name&quot;:&quot;Image type understanding&quot;}],&quot;allocationPercent&quot;:81,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Anurag&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;a871247b-dc9e-43a7-9251-513a9bd61bb5&quot;,&quot;upatedBy&quot;:&quot;bee68576-1498-4aa0-a77c-bfa018d300e3&quot;,&quot;createdAt&quot;:&quot;2010-01-01T02:38:18.230Z&quot;,&quot;updatedAt&quot;:&quot;2083-05-29T11:14:50.243Z&quot;,&quot;id&quot;:&quot;7&quot;},{&quot;opportunityId&quot;:&quot;a8ec6cb3-dde3-4c2a-810f-d237d7cfe41f&quot;,&quot;name&quot;:&quot;Raven&quot;,&quot;startDate&quot;:&quot;2070-11-04T11:23:42.575Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;CV&quot;,&quot;resourcesRequired&quot;:81,&quot;skills&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;BBox - Annotation Level 1&quot;},{&quot;id&quot;:&quot;11&quot;,&quot;name&quot;:&quot;Client Tools&quot;},{&quot;id&quot;:&quot;12&quot;,&quot;name&quot;:&quot;Image type understanding&quot;}],&quot;allocationPercent&quot;:99,&quot;status&quot;:&quot;Pending&quot;,&quot;assignedTo&quot;:[&quot;Devashree&quot;],&quot;details&quot;:{},&quot;createdBy&quot;:&quot;37dd097b-1d52-44f8-99bd-8e40251fad2a&quot;,&quot;upatedBy&quot;:&quot;d918b3d4-5b51-45c1-b846-a6a8293f9989&quot;,&quot;createdAt&quot;:&quot;2018-07-17T10:50:34.964Z&quot;,&quot;updatedAt&quot;:&quot;2035-02-18T09:33:13.584Z&quot;,&quot;id&quot;:&quot;8&quot;},{&quot;opportunityId&quot;:&quot;4a8af1eb-4427-45cc-8c42-1cf091f57ecf&quot;,&quot;name&quot;:&quot;Nuro&quot;,&quot;startDate&quot;:&quot;2075-09-24T10:05:15.863Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;NLP&quot;,&quot;resourcesRequired&quot;:100,&quot;skills&quot;:[{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Span Annotation&quot;},{&quot;id&quot;:&quot;10&quot;,&quot;name&quot;:&quot;Text Categorization &quot;},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Aerial Image understanding&quot;}],&quot;allocationPercent&quot;:24,&quot;status&quot;:&quot;Pending&quot;,&quot;assignedTo&quot;:[&quot;Ojas&quot;],&quot;details&quot;:{},&quot;createdBy&quot;:&quot;7cbaf2f1-d457-4c45-b290-d46bc48ae990&quot;,&quot;upatedBy&quot;:&quot;a689298e-a7d9-4cf6-84d9-ef11119ac84d&quot;,&quot;createdAt&quot;:&quot;2070-10-14T15:20:25.517Z&quot;,&quot;updatedAt&quot;:&quot;2052-01-29T12:42:44.173Z&quot;,&quot;id&quot;:&quot;9&quot;},{&quot;opportunityId&quot;:&quot;ca500002-2bd3-46fb-b14d-8d9bbc858299&quot;,&quot;name&quot;:&quot;Orbital Insight&quot;,&quot;startDate&quot;:&quot;2053-02-25T19:28:25.500Z&quot;,&quot;role&quot;:&quot;Finance&quot;,&quot;segment&quot;:&quot;Finance&quot;,&quot;resourcesRequired&quot;:88,&quot;skills&quot;:[{&quot;id&quot;:&quot;20&quot;,&quot;name&quot;:&quot;IFRS/GAAP/Accounting Standards&quot;}],&quot;allocationPercent&quot;:16,&quot;status&quot;:&quot;Overdue&quot;,&quot;assignedTo&quot;:[&quot;Ravi&quot;],&quot;details&quot;:{},&quot;createdBy&quot;:&quot;ce60d279-c11d-4f56-9ac0-85efa4477900&quot;,&quot;upatedBy&quot;:&quot;ee68e7df-24fe-4f87-a601-4ef01c93a4e2&quot;,&quot;createdAt&quot;:&quot;2035-07-13T13:18:40.817Z&quot;,&quot;updatedAt&quot;:&quot;2073-11-22T05:51:55.755Z&quot;,&quot;id&quot;:&quot;10&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:47:20.526 [print] [
+  {
+    &quot;opportunityId&quot;: &quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,
+    &quot;name&quot;: &quot;Kitware&quot;,
+    &quot;startDate&quot;: &quot;2022-10-22T01:44:25.189Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;CV&quot;,
+    &quot;resourcesRequired&quot;: 100,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;name&quot;: &quot;BBox - Annotation Level 1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;16&quot;,
+        &quot;name&quot;: &quot;Audio - Annotation Level 1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;2&quot;,
+        &quot;name&quot;: &quot;Aerial Image understanding&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 20,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Ajay&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;f098da2f-b921-436b-a00b-99faff5ac3dc&quot;,
+    &quot;upatedBy&quot;: &quot;3a7fd6d3-2ff0-4fc9-adb9-f0cc3ac6b5df&quot;,
+    &quot;createdAt&quot;: &quot;2026-12-16T20:00:17.572Z&quot;,
+    &quot;updatedAt&quot;: &quot;2047-02-04T19:54:12.858Z&quot;,
+    &quot;id&quot;: &quot;1&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,
+    &quot;name&quot;: &quot;Kitware&quot;,
+    &quot;startDate&quot;: &quot;2022-10-22T01:44:25.189Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;NLP&quot;,
+    &quot;resourcesRequired&quot;: 95,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;9&quot;,
+        &quot;name&quot;: &quot;Span Annotation&quot;
+      },
+      {
+        &quot;id&quot;: &quot;18&quot;,
+        &quot;name&quot;: &quot;Text Categorization &quot;
+      },
+      {
+        &quot;id&quot;: &quot;11&quot;,
+        &quot;name&quot;: &quot;Basics of NLP&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 30,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Ajay&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;e3f6ac2e-40ae-46c9-a178-11c650e3a4e5&quot;,
+    &quot;upatedBy&quot;: &quot;60d283ca-90be-48ab-8936-473d2f3a43ef&quot;,
+    &quot;createdAt&quot;: &quot;2012-09-21T17:45:04.620Z&quot;,
+    &quot;updatedAt&quot;: &quot;1995-12-05T15:39:02.525Z&quot;,
+    &quot;id&quot;: &quot;2&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,
+    &quot;name&quot;: &quot;Kitware&quot;,
+    &quot;startDate&quot;: &quot;2022-10-22T01:44:25.189Z&quot;,
+    &quot;role&quot;: &quot;Finance&quot;,
+    &quot;segment&quot;: &quot;Finance&quot;,
+    &quot;resourcesRequired&quot;: 4,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;19&quot;,
+        &quot;name&quot;: &quot;IFRS/GAAP/Accounting &quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 100,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Ravi&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;e3f6ac2e-40ae-46c9-a178-11c650e3a4e5&quot;,
+    &quot;upatedBy&quot;: &quot;60d283ca-90be-48ab-8936-473d2f3a43ef&quot;,
+    &quot;createdAt&quot;: &quot;2012-09-21T17:45:04.620Z&quot;,
+    &quot;updatedAt&quot;: &quot;1995-12-05T15:39:02.525Z&quot;,
+    &quot;id&quot;: &quot;3&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;e211e011-5694-46ec-9d41-a455774f79ea&quot;,
+    &quot;name&quot;: &quot;Senetra&quot;,
+    &quot;startDate&quot;: &quot;2022-11-02T20:11:52.434Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;CV&quot;,
+    &quot;resourcesRequired&quot;: 34,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;name&quot;: &quot;BBox - Annotation Level 1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;4&quot;,
+        &quot;name&quot;: &quot;Audio - Annotation Level 2&quot;
+      },
+      {
+        &quot;id&quot;: &quot;6&quot;,
+        &quot;name&quot;: &quot;Aerial Image understanding&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 77,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Riya&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;f8ae9a00-563c-4c15-964d-7482003c7069&quot;,
+    &quot;upatedBy&quot;: &quot;39092d56-8b24-4db6-9e22-c07b976848dd&quot;,
+    &quot;createdAt&quot;: &quot;2021-04-08T11:28:05.660Z&quot;,
+    &quot;updatedAt&quot;: &quot;2027-04-19T15:56:13.406Z&quot;,
+    &quot;id&quot;: &quot;4&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;e211e011-5694-46ec-9d41-a455774f79ea&quot;,
+    &quot;name&quot;: &quot;Senetra&quot;,
+    &quot;startDate&quot;: &quot;2038-09-19T15:29:11.219Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;NLP&quot;,
+    &quot;resourcesRequired&quot;: 92,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;2&quot;,
+        &quot;name&quot;: &quot;Span Annotation&quot;
+      },
+      {
+        &quot;id&quot;: &quot;10&quot;,
+        &quot;name&quot;: &quot;Text Categorization &quot;
+      },
+      {
+        &quot;id&quot;: &quot;6&quot;,
+        &quot;name&quot;: &quot;Aerial Image understanding&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 81,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Riya&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;a871247b-dc9e-43a7-9251-513a9bd61bb5&quot;,
+    &quot;upatedBy&quot;: &quot;bee68576-1498-4aa0-a77c-bfa018d300e3&quot;,
+    &quot;createdAt&quot;: &quot;2010-01-01T02:38:18.230Z&quot;,
+    &quot;updatedAt&quot;: &quot;2083-05-29T11:14:50.243Z&quot;,
+    &quot;id&quot;: &quot;5&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;57aa38e0-a79e-4212-ab79-b9ce10fc9a3d&quot;,
+    &quot;name&quot;: &quot;Kinatrex&quot;,
+    &quot;startDate&quot;: &quot;2038-09-19T15:29:11.219Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;NLP&quot;,
+    &quot;resourcesRequired&quot;: 92,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;2&quot;,
+        &quot;name&quot;: &quot;Span Annotation&quot;
+      },
+      {
+        &quot;id&quot;: &quot;10&quot;,
+        &quot;name&quot;: &quot;Text Categorization &quot;
+      },
+      {
+        &quot;id&quot;: &quot;6&quot;,
+        &quot;name&quot;: &quot;Aerial Image understanding&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 81,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Anurag&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;a871247b-dc9e-43a7-9251-513a9bd61bb5&quot;,
+    &quot;upatedBy&quot;: &quot;bee68576-1498-4aa0-a77c-bfa018d300e3&quot;,
+    &quot;createdAt&quot;: &quot;2010-01-01T02:38:18.230Z&quot;,
+    &quot;updatedAt&quot;: &quot;2083-05-29T11:14:50.243Z&quot;,
+    &quot;id&quot;: &quot;6&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;57aa38e0-a79e-4212-ab79-b9ce10fc9a3d&quot;,
+    &quot;name&quot;: &quot;Kinatrex&quot;,
+    &quot;startDate&quot;: &quot;2038-09-19T15:29:11.219Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;CV&quot;,
+    &quot;resourcesRequired&quot;: 92,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;name&quot;: &quot;BBox - Annotation Level 1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;11&quot;,
+        &quot;name&quot;: &quot;Client Tools&quot;
+      },
+      {
+        &quot;id&quot;: &quot;12&quot;,
+        &quot;name&quot;: &quot;Image type understanding&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 81,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Anurag&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;a871247b-dc9e-43a7-9251-513a9bd61bb5&quot;,
+    &quot;upatedBy&quot;: &quot;bee68576-1498-4aa0-a77c-bfa018d300e3&quot;,
+    &quot;createdAt&quot;: &quot;2010-01-01T02:38:18.230Z&quot;,
+    &quot;updatedAt&quot;: &quot;2083-05-29T11:14:50.243Z&quot;,
+    &quot;id&quot;: &quot;7&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;a8ec6cb3-dde3-4c2a-810f-d237d7cfe41f&quot;,
+    &quot;name&quot;: &quot;Raven&quot;,
+    &quot;startDate&quot;: &quot;2070-11-04T11:23:42.575Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;CV&quot;,
+    &quot;resourcesRequired&quot;: 81,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;name&quot;: &quot;BBox - Annotation Level 1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;11&quot;,
+        &quot;name&quot;: &quot;Client Tools&quot;
+      },
+      {
+        &quot;id&quot;: &quot;12&quot;,
+        &quot;name&quot;: &quot;Image type understanding&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 99,
+    &quot;status&quot;: &quot;Pending&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Devashree&quot;
+    ],
+    &quot;details&quot;: {
+    },
+    &quot;createdBy&quot;: &quot;37dd097b-1d52-44f8-99bd-8e40251fad2a&quot;,
+    &quot;upatedBy&quot;: &quot;d918b3d4-5b51-45c1-b846-a6a8293f9989&quot;,
+    &quot;createdAt&quot;: &quot;2018-07-17T10:50:34.964Z&quot;,
+    &quot;updatedAt&quot;: &quot;2035-02-18T09:33:13.584Z&quot;,
+    &quot;id&quot;: &quot;8&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;4a8af1eb-4427-45cc-8c42-1cf091f57ecf&quot;,
+    &quot;name&quot;: &quot;Nuro&quot;,
+    &quot;startDate&quot;: &quot;2075-09-24T10:05:15.863Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;NLP&quot;,
+    &quot;resourcesRequired&quot;: 100,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;2&quot;,
+        &quot;name&quot;: &quot;Span Annotation&quot;
+      },
+      {
+        &quot;id&quot;: &quot;10&quot;,
+        &quot;name&quot;: &quot;Text Categorization &quot;
+      },
+      {
+        &quot;id&quot;: &quot;6&quot;,
+        &quot;name&quot;: &quot;Aerial Image understanding&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 24,
+    &quot;status&quot;: &quot;Pending&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Ojas&quot;
+    ],
+    &quot;details&quot;: {
+    },
+    &quot;createdBy&quot;: &quot;7cbaf2f1-d457-4c45-b290-d46bc48ae990&quot;,
+    &quot;upatedBy&quot;: &quot;a689298e-a7d9-4cf6-84d9-ef11119ac84d&quot;,
+    &quot;createdAt&quot;: &quot;2070-10-14T15:20:25.517Z&quot;,
+    &quot;updatedAt&quot;: &quot;2052-01-29T12:42:44.173Z&quot;,
+    &quot;id&quot;: &quot;9&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;ca500002-2bd3-46fb-b14d-8d9bbc858299&quot;,
+    &quot;name&quot;: &quot;Orbital Insight&quot;,
+    &quot;startDate&quot;: &quot;2053-02-25T19:28:25.500Z&quot;,
+    &quot;role&quot;: &quot;Finance&quot;,
+    &quot;segment&quot;: &quot;Finance&quot;,
+    &quot;resourcesRequired&quot;: 88,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;20&quot;,
+        &quot;name&quot;: &quot;IFRS/GAAP/Accounting Standards&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 16,
+    &quot;status&quot;: &quot;Overdue&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Ravi&quot;
+    ],
+    &quot;details&quot;: {
+    },
+    &quot;createdBy&quot;: &quot;ce60d279-c11d-4f56-9ac0-85efa4477900&quot;,
+    &quot;upatedBy&quot;: &quot;ee68e7df-24fe-4f87-a601-4ef01c93a4e2&quot;,
+    &quot;createdAt&quot;: &quot;2035-07-13T13:18:40.817Z&quot;,
+    &quot;updatedAt&quot;: &quot;2073-11-22T05:51:55.755Z&quot;,
+    &quot;id&quot;: &quot;10&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def first = response[1]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;requirements&#39;, first.opportunityId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5331</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">22:47:20.558 request:
+2 &gt; GET https://tms-api.tms.imerit-playground.io/api/v1/requirements/866383cc-c0bd-49f2-acb8-8fea2c0b650e
+2 &gt; Host: tms-api.tms.imerit-playground.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+22:47:25.870 response time in milliseconds: 5311
+2 &lt; 200
+2 &lt; Date: Fri, 14 Oct 2022 17:17:25 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 1633
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; ETag: W/&quot;661-RCSNwTLJaRjOjAsDrsFLYBtDXQ4&quot;
+[{&quot;opportunityId&quot;:&quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,&quot;name&quot;:&quot;Kitware&quot;,&quot;startDate&quot;:&quot;2022-10-22T01:44:25.189Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;CV&quot;,&quot;resourcesRequired&quot;:100,&quot;skills&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;BBox - Annotation Level 1&quot;},{&quot;id&quot;:&quot;16&quot;,&quot;name&quot;:&quot;Audio - Annotation Level 1&quot;},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Aerial Image understanding&quot;}],&quot;allocationPercent&quot;:20,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Ajay&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;f098da2f-b921-436b-a00b-99faff5ac3dc&quot;,&quot;upatedBy&quot;:&quot;3a7fd6d3-2ff0-4fc9-adb9-f0cc3ac6b5df&quot;,&quot;createdAt&quot;:&quot;2026-12-16T20:00:17.572Z&quot;,&quot;updatedAt&quot;:&quot;2047-02-04T19:54:12.858Z&quot;,&quot;id&quot;:&quot;1&quot;},{&quot;opportunityId&quot;:&quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,&quot;name&quot;:&quot;Kitware&quot;,&quot;startDate&quot;:&quot;2022-10-22T01:44:25.189Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;NLP&quot;,&quot;resourcesRequired&quot;:95,&quot;skills&quot;:[{&quot;id&quot;:&quot;9&quot;,&quot;name&quot;:&quot;Span Annotation&quot;},{&quot;id&quot;:&quot;18&quot;,&quot;name&quot;:&quot;Text Categorization &quot;},{&quot;id&quot;:&quot;11&quot;,&quot;name&quot;:&quot;Basics of NLP&quot;}],&quot;allocationPercent&quot;:30,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Ajay&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;e3f6ac2e-40ae-46c9-a178-11c650e3a4e5&quot;,&quot;upatedBy&quot;:&quot;60d283ca-90be-48ab-8936-473d2f3a43ef&quot;,&quot;createdAt&quot;:&quot;2012-09-21T17:45:04.620Z&quot;,&quot;updatedAt&quot;:&quot;1995-12-05T15:39:02.525Z&quot;,&quot;id&quot;:&quot;2&quot;},{&quot;opportunityId&quot;:&quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,&quot;name&quot;:&quot;Kitware&quot;,&quot;startDate&quot;:&quot;2022-10-22T01:44:25.189Z&quot;,&quot;role&quot;:&quot;Finance&quot;,&quot;segment&quot;:&quot;Finance&quot;,&quot;resourcesRequired&quot;:4,&quot;skills&quot;:[{&quot;id&quot;:&quot;19&quot;,&quot;name&quot;:&quot;IFRS/GAAP/Accounting &quot;}],&quot;allocationPercent&quot;:100,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Ravi&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;e3f6ac2e-40ae-46c9-a178-11c650e3a4e5&quot;,&quot;upatedBy&quot;:&quot;60d283ca-90be-48ab-8936-473d2f3a43ef&quot;,&quot;createdAt&quot;:&quot;2012-09-21T17:45:04.620Z&quot;,&quot;updatedAt&quot;:&quot;1995-12-05T15:39:02.525Z&quot;,&quot;id&quot;:&quot;3&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">22:47:25.874 [print] [
+  {
+    &quot;opportunityId&quot;: &quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,
+    &quot;name&quot;: &quot;Kitware&quot;,
+    &quot;startDate&quot;: &quot;2022-10-22T01:44:25.189Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;CV&quot;,
+    &quot;resourcesRequired&quot;: 100,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;name&quot;: &quot;BBox - Annotation Level 1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;16&quot;,
+        &quot;name&quot;: &quot;Audio - Annotation Level 1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;2&quot;,
+        &quot;name&quot;: &quot;Aerial Image understanding&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 20,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Ajay&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;f098da2f-b921-436b-a00b-99faff5ac3dc&quot;,
+    &quot;upatedBy&quot;: &quot;3a7fd6d3-2ff0-4fc9-adb9-f0cc3ac6b5df&quot;,
+    &quot;createdAt&quot;: &quot;2026-12-16T20:00:17.572Z&quot;,
+    &quot;updatedAt&quot;: &quot;2047-02-04T19:54:12.858Z&quot;,
+    &quot;id&quot;: &quot;1&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,
+    &quot;name&quot;: &quot;Kitware&quot;,
+    &quot;startDate&quot;: &quot;2022-10-22T01:44:25.189Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;NLP&quot;,
+    &quot;resourcesRequired&quot;: 95,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;9&quot;,
+        &quot;name&quot;: &quot;Span Annotation&quot;
+      },
+      {
+        &quot;id&quot;: &quot;18&quot;,
+        &quot;name&quot;: &quot;Text Categorization &quot;
+      },
+      {
+        &quot;id&quot;: &quot;11&quot;,
+        &quot;name&quot;: &quot;Basics of NLP&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 30,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Ajay&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;e3f6ac2e-40ae-46c9-a178-11c650e3a4e5&quot;,
+    &quot;upatedBy&quot;: &quot;60d283ca-90be-48ab-8936-473d2f3a43ef&quot;,
+    &quot;createdAt&quot;: &quot;2012-09-21T17:45:04.620Z&quot;,
+    &quot;updatedAt&quot;: &quot;1995-12-05T15:39:02.525Z&quot;,
+    &quot;id&quot;: &quot;2&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;866383cc-c0bd-49f2-acb8-8fea2c0b650e&quot;,
+    &quot;name&quot;: &quot;Kitware&quot;,
+    &quot;startDate&quot;: &quot;2022-10-22T01:44:25.189Z&quot;,
+    &quot;role&quot;: &quot;Finance&quot;,
+    &quot;segment&quot;: &quot;Finance&quot;,
+    &quot;resourcesRequired&quot;: 4,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;19&quot;,
+        &quot;name&quot;: &quot;IFRS/GAAP/Accounting &quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 100,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Ravi&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;e3f6ac2e-40ae-46c9-a178-11c650e3a4e5&quot;,
+    &quot;upatedBy&quot;: &quot;60d283ca-90be-48ab-8936-473d2f3a43ef&quot;,
+    &quot;createdAt&quot;: &quot;2012-09-21T17:45:04.620Z&quot;,
+    &quot;updatedAt&quot;: &quot;1995-12-05T15:39:02.525Z&quot;,
+    &quot;id&quot;: &quot;3&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match first.name == &quot;Kitware&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match first.startDate == &quot;2022-10-22T01:44:25.189Z&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match first.role == &quot;Operator&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match first.segment == &quot;CV&quot;,&quot;NLP&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match first.resourcesRequired == 100, 95</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:25]</span>
+                <span class="scenario-name">View all the details of the opportunity</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>4501</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://tms-api.tms.imerit-playground.io/api/v1/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:47:16.255 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;requirements/e211e011-5694-46ec-9d41-a455774f79ea&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4481</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">22:47:16.843 request:
+1 &gt; GET https://tms-api.tms.imerit-playground.io/api/v1/requirements/e211e011-5694-46ec-9d41-a455774f79ea
+1 &gt; Host: tms-api.tms.imerit-playground.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:47:20.834 response time in milliseconds: 3990
+1 &lt; 200
+1 &lt; Date: Fri, 14 Oct 2022 17:17:19 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1153
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;481-rVObgB7uziS6fbbDaycmWteJiho&quot;
+[{&quot;opportunityId&quot;:&quot;e211e011-5694-46ec-9d41-a455774f79ea&quot;,&quot;name&quot;:&quot;Senetra&quot;,&quot;startDate&quot;:&quot;2022-11-02T20:11:52.434Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;CV&quot;,&quot;resourcesRequired&quot;:34,&quot;skills&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;BBox - Annotation Level 1&quot;},{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;Audio - Annotation Level 2&quot;},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Aerial Image understanding&quot;}],&quot;allocationPercent&quot;:77,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Riya&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;f8ae9a00-563c-4c15-964d-7482003c7069&quot;,&quot;upatedBy&quot;:&quot;39092d56-8b24-4db6-9e22-c07b976848dd&quot;,&quot;createdAt&quot;:&quot;2021-04-08T11:28:05.660Z&quot;,&quot;updatedAt&quot;:&quot;2027-04-19T15:56:13.406Z&quot;,&quot;id&quot;:&quot;4&quot;},{&quot;opportunityId&quot;:&quot;e211e011-5694-46ec-9d41-a455774f79ea&quot;,&quot;name&quot;:&quot;Senetra&quot;,&quot;startDate&quot;:&quot;2038-09-19T15:29:11.219Z&quot;,&quot;role&quot;:&quot;Operator&quot;,&quot;segment&quot;:&quot;NLP&quot;,&quot;resourcesRequired&quot;:92,&quot;skills&quot;:[{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Span Annotation&quot;},{&quot;id&quot;:&quot;10&quot;,&quot;name&quot;:&quot;Text Categorization &quot;},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Aerial Image understanding&quot;}],&quot;allocationPercent&quot;:81,&quot;status&quot;:&quot;New&quot;,&quot;assignedTo&quot;:[&quot;Riya&quot;],&quot;details&quot;:&quot;{}&quot;,&quot;createdBy&quot;:&quot;a871247b-dc9e-43a7-9251-513a9bd61bb5&quot;,&quot;upatedBy&quot;:&quot;bee68576-1498-4aa0-a77c-bfa018d300e3&quot;,&quot;createdAt&quot;:&quot;2010-01-01T02:38:18.230Z&quot;,&quot;updatedAt&quot;:&quot;2083-05-29T11:14:50.243Z&quot;,&quot;id&quot;:&quot;5&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">22:47:20.839 [print] [
+  {
+    &quot;opportunityId&quot;: &quot;e211e011-5694-46ec-9d41-a455774f79ea&quot;,
+    &quot;name&quot;: &quot;Senetra&quot;,
+    &quot;startDate&quot;: &quot;2022-11-02T20:11:52.434Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;CV&quot;,
+    &quot;resourcesRequired&quot;: 34,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;name&quot;: &quot;BBox - Annotation Level 1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;4&quot;,
+        &quot;name&quot;: &quot;Audio - Annotation Level 2&quot;
+      },
+      {
+        &quot;id&quot;: &quot;6&quot;,
+        &quot;name&quot;: &quot;Aerial Image understanding&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 77,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Riya&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;f8ae9a00-563c-4c15-964d-7482003c7069&quot;,
+    &quot;upatedBy&quot;: &quot;39092d56-8b24-4db6-9e22-c07b976848dd&quot;,
+    &quot;createdAt&quot;: &quot;2021-04-08T11:28:05.660Z&quot;,
+    &quot;updatedAt&quot;: &quot;2027-04-19T15:56:13.406Z&quot;,
+    &quot;id&quot;: &quot;4&quot;
+  },
+  {
+    &quot;opportunityId&quot;: &quot;e211e011-5694-46ec-9d41-a455774f79ea&quot;,
+    &quot;name&quot;: &quot;Senetra&quot;,
+    &quot;startDate&quot;: &quot;2038-09-19T15:29:11.219Z&quot;,
+    &quot;role&quot;: &quot;Operator&quot;,
+    &quot;segment&quot;: &quot;NLP&quot;,
+    &quot;resourcesRequired&quot;: 92,
+    &quot;skills&quot;: [
+      {
+        &quot;id&quot;: &quot;2&quot;,
+        &quot;name&quot;: &quot;Span Annotation&quot;
+      },
+      {
+        &quot;id&quot;: &quot;10&quot;,
+        &quot;name&quot;: &quot;Text Categorization &quot;
+      },
+      {
+        &quot;id&quot;: &quot;6&quot;,
+        &quot;name&quot;: &quot;Aerial Image understanding&quot;
+      }
+    ],
+    &quot;allocationPercent&quot;: 81,
+    &quot;status&quot;: &quot;New&quot;,
+    &quot;assignedTo&quot;: [
+      &quot;Riya&quot;
+    ],
+    &quot;details&quot;: &quot;{}&quot;,
+    &quot;createdBy&quot;: &quot;a871247b-dc9e-43a7-9251-513a9bd61bb5&quot;,
+    &quot;upatedBy&quot;: &quot;bee68576-1498-4aa0-a77c-bfa018d300e3&quot;,
+    &quot;createdAt&quot;: &quot;2010-01-01T02:38:18.230Z&quot;,
+    &quot;updatedAt&quot;: &quot;2083-05-29T11:14:50.243Z&quot;,
+    &quot;id&quot;: &quot;5&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref failed">30</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;Senetra&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">22:47:20.853 classpath:TMS/Feature/opportunitiesList.feature:30
+Then match response.name == &quot;Senetra&quot;
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  &#39;#notpresent&#39;
+  &#39;Senetra&#39;
+
+classpath:TMS/Feature/opportunitiesList.feature:30
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.startDate == &quot;2022-11-02T20:11:52.434Z&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.role == &quot;Operator&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.segment == &quot;CV&quot;,&quot;NLP&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.resourcesRequired == 43, 92</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

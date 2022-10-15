@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "strict": true,
+      "baseUrl": "../node_modules",
+      "target": "es5",
+      "lib": ["es5", "dom"],
+      "types": ["cypress"]
+    },
+    "include": [
+      "**/*.ts"
+    ],
+    "reporter": "mochawesome",
+    "reporterOptions":{
+      "reportDir":"cypress/reports",
+      "reportFilename": "report",
+      "overwrite": true,
+      "html": true,
+      "json": true,
+      "charts": true   
+    },
+    "video":false
+  }

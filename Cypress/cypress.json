@@ -1,14 +1,32 @@
-{"reporter": "salty-cypress-testrail-reporter",
-    "reporterOptions": {
-      "description":"This is testrail",
-      "domain": "shazadzemosolabs.testrail.io",
-      "username": "shazad.khan@zemosolabs.com",
-      "password": "Shazad.Khan@123",
-      "projectId": "2",
-      "suiteId": "9",
-      "createTestRun": false,
-      "runId":21,
-      "runName": "Amazon login test"
-        },
-    "video": false
-  }
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "../node_modules",
+    "target": "es5",
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    
+    "types": [
+      "cypress"
+    ]
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "reporter": "mochawesome",
+    "reporterOptions":{
+      "reportDir":"cypress/reports",
+      "reportFilename": "report",
+      "overwrite": true,
+      "html": true,
+      "json": true,
+      "charts": true   
+    },
+  "video": false,
+  "projectId": "o8a2ot",
+  "chromeWebSecurity": false,
+  "viewportWidth":1500,
+  "viewportHeight":800
+}

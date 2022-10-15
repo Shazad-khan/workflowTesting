@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"TMS\/Feature\/opportunitiesList[1:6]","start":1665767223541,"end":1665767272142,"title":"TMS\/Feature\/opportunitiesList[1:6] 22:37:03.541-22:37:52.142 View all the list of opportunities","className":"failed"},{"id":2,"group":2,"content":"TMS\/Feature\/opportunitiesList[2:31]","start":1665767223541,"end":1665767242465,"title":"TMS\/Feature\/opportunitiesList[2:31] 22:37:03.541-22:37:22.465 View all the details of the opportunity"},{"id":3,"group":3,"content":"TMS\/Feature\/users[1:7]","start":1665767223541,"end":1665767239503,"title":"TMS\/Feature\/users[1:7] 22:37:03.541-22:37:19.503 get all users and then get the first user by id","className":"failed"},{"id":4,"group":4,"content":"TMS\/Feature\/users[2:18]","start":1665767223541,"end":1665767231966,"title":"TMS\/Feature\/users[2:18] 22:37:03.541-22:37:11.966 create a user and then get it by id"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

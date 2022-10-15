@@ -1,4 +1,4 @@
-Feature: The user should be able to view the list of opportunities, so that i can select an opportunity
+Feature: User can locate the resources in the Requierments
 
 Background:
     * url 'https://tms-api.tms.imerit-playground.io/api/v1/'

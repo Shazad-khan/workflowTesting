@@ -1,11 +1,11 @@
-name: Generate Cypress Report
+name: TMS application test
 on:
   push:
     branches:
       - 'main'
 jobs:
   cypress-test:
-    name: Run on Chrome 83
+    name: FrontEnd Testing
     runs-on:  ubuntu-18.04
     container:  cypress/browsers:node12.18.0-chrome83-ff77
     defaults:

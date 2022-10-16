@@ -1,4 +1,10 @@
-{
+{ 
+  "defaultCommandTimeout":  10000,
+  "execTimeout":  60000,
+  "pageLoadTimeout":  600000,
+  "requestTimeout": 60000,
+  "responseTimeout":  60000,
+  
   "compilerOptions": {
     "strict": true,
     "baseUrl": "../node_modules",
@@ -28,5 +34,6 @@
   "projectId": "o8a2ot",
   "chromeWebSecurity": false,
   "viewportWidth":1500,
-  "viewportHeight":800
+  "viewportHeight":800,
+  
 }

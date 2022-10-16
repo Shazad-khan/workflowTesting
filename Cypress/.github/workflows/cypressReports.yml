@@ -2,22 +2,27 @@ name: Generate Cypress Report
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 jobs:
   cypress-test:
     name: Run on Chrome 83
     runs-on:  ubuntu-18.04
     container:  cypress/browsers:node12.18.0-chrome83-ff77
+    defaults:
+      run:
+        working-directory: Cypress
+
     steps:
-      - uses: action/checkout@v2
-      
+      - uses: actions/checkout@v2
+  
       - name: Install cypress and verify
         run: |
           npm ci
+          npm install typescript
           $(npm bin)/cypress verify
           
       - name: Run Cypress tests
-        run: npm run test:chrome
+        run: npm run test
         continue-on-error: false
 
       - name: Copy test execution videos and screenshots
@@ -39,3 +44,20 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish dir: ./public
+  
+  Karate-test:
+    name: Backend Testing
+    runs-on:  ubuntu-18.04
+    defaults:
+      run:
+        working-directory: Karate
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: TestRail CLI upload results
+        if: always()
+        run: |
+          mvn test
+  
+  

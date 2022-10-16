@@ -34,5 +34,9 @@
   "pageLoadTimeout":  600000,
   "requestTimeout": 60000,
   "responseTimeout":  60000
+<<<<<<< HEAD
   
 }
+=======
+}
+>>>>>>> initial commit

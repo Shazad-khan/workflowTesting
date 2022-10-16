@@ -8,10 +8,14 @@ jobs:
     name: Run on Chrome 83
     runs-on:  ubuntu-18.04
     container:  cypress/browsers:node12.18.0-chrome83-ff77
+    defaults:
+      run:
+        working-directory: Cypress
+
     steps:
       - uses: actions/checkout@v2
       
-      - uses: dorny/paths-filter@v2
+      - uses: Shazad-Khan/Cypress@v2
         id: filter
         with:
           filters: |

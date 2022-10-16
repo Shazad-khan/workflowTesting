@@ -18,6 +18,7 @@ jobs:
       - name: Install cypress and verify
         run: |
           npm ci
+          npm install typescript
           $(npm bin)/cypress verify
           
       - name: Run Cypress tests
